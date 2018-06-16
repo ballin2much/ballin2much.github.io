@@ -1,0 +1,132 @@
+body, html {
+    height:100%;
+    margin:0;
+    font-size: 16px;
+    font-family:"Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.mainLink {
+  text-decoration: none;
+  position:fixed;
+  top: 50px;
+  width:100%;
+  text-align:center;
+  color:#2f2a3b;
+  font-size:32px;
+  letter-spacing:8px;
+  text-transform:uppercase; 
+}
+
+.img1, .img2, .img3, .end {
+    position:relative;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+  
+    /*
+      fixed = parallax
+      scroll = normal
+    */
+    background-attachment:fixed;
+    z-index: -1;
+  }
+  
+  .img1 {
+    background-image:url('Cantreachwallpaper.png');
+    min-height:100%;
+  }
+
+  .img2 {
+    background-image:url('ITWILL\ Wallpaper.png');
+    min-height:100%;
+  }
+
+  .img3 {
+    background-image:url('AlmostWallpaper.png');
+    min-height:100%;
+  }
+
+  .end {
+    background-image:url('Even\ Elephants\ Forget.png');
+    min-height:100%;
+    opacity: 1;
+    background-position: bottom;
+  }
+
+    
+  .ptext .border.trans {
+    background-color:transparent;
+  }
+
+  .section {
+    display: flex;
+    position: relative;    
+    background-color: #ebd8c6;
+    justify-content:center;
+  }
+
+  .section2 {
+    background-color: #282828;
+    color: #fff;
+  }
+
+  .section3 {
+    color: #ede1a6;
+    background-color: #232b3d;
+  }
+
+  .iframe {
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    max-width: 500px;
+  }
+
+  .p1 {
+    align-self: center;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    font-size: 2vw;
+    line-height: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .color1 {
+    color: #fff;
+  }
+
+  .color2 {
+    color: #232b3d;
+  }
+
+  .color3 {
+    color: #ff7f00;
+  }
+
+  @media only screen and (max-width:700px) {
+    .section2 {
+      flex-direction: column;
+    }
+    
+    .section1, .section3 {
+      flex-direction: column-reverse;
+    }
+
+    .p1 {
+      font-size: 15px;
+      width: 100%;
+    }
+
+    .iframe {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
