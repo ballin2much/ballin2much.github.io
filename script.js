@@ -42,7 +42,7 @@ function getRandomQuote(x) {
     } else if (x == "almost") {
         y = ["Why are we here?<br>Why weren't you there?<br>Why should I care?<br>Why's my grandmama dead?<br>Why'd she have MS?<br>Why I feel this stress?<br>Why I don't feel blessed?<br>Why I shouldn't fear death",
         "I ain't almost a trap rapper, I'm almost a trash rapper<br>Most of my jokes almost had laughter<br>When I look at ya I lose my breath like I have asthma<br>A lot of questions I almost asked ya<br>Actually nevermind<br>I'll save em for a better time",
-        "we all want everything nothing less<br>but lets just ride with it, vibe with it<br>trust me I get it<br>I'm wicked, I'm twisted, I'm vicious<br>I said some awful things and I meant em"]
+        "We all want everything nothing less<br>But lets just ride with it, vibe with it<br>Trust me I get it<br>I'm wicked, I'm twisted, I'm vicious<br>I said some awful things and I meant em"]
     }
     document.getElementById(x).innerHTML = y[Math.floor((Math.random() * y.length))];
 }
