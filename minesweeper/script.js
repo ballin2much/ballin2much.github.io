@@ -6,6 +6,9 @@ let timer = 0;
 var timerInt = null;
 let highScore = -1;
 let spacesNeeded = rows*columns-mines;
+let clicks = 0;
+let delay = 300;
+let timer2 = null;
 
 $(document).ready(function() {
     createBoard();    
@@ -69,6 +72,7 @@ function createBoard(e) {
     }
 
     $('.hidden').click(function(e) {
+        clicks++;
         if (!$(this).hasClass('hidden')) return;
         let space = $(this);
         if (timerInt === null) {
@@ -78,13 +82,27 @@ function createBoard(e) {
             space.toggleClass('flagged');
             mineCount = ((space).hasClass('flagged')) ? mineCount-1:mineCount+1;
             $('#mineCount').text(mineCount);
-        } else if (!(space.hasClass('flagged'))){            
-           if (space.hasClass('bomb')) {
-                loseGame();
-            } else if (space.hasClass('hidden')){
-                revealSpace(space);
-            }
+        } else if (clicks == 1) {
+            timer2 = setTimeout(function() {
+                if (!(space.hasClass('flagged'))) {            
+                    if (space.hasClass('bomb')) {
+                        loseGame();
+                    } else {
+                        revealSpace(space);
+                    } 
+                }
+                clicks = 0;
+            }, delay);
+        } else {
+            clearTimeout(timer2);
+            clicks = 0;
         }
+    }).dblclick(function() {
+        if (!$(this).hasClass('hidden')) return;
+        let space = $(this);
+        space.toggleClass('flagged');
+        mineCount = ((space).hasClass('flagged')) ? mineCount-1:mineCount+1;
+        $('#mineCount').text(mineCount);
     });
 }
 
