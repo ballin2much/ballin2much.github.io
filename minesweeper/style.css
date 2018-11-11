@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #FFFAF0;
+    color: #ff69b4;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.space {
+    width: 30px;
+    height: 30px;    
+    display: inline-block;
+    text-align: center;
+    margin: 2px;
+    vertical-align: top;
+    line-height: 30px;
+}
+
+.space:hover {
+    box-shadow: 5px 5px, -5px -5px, 5px -5px, -5px 5px;
+}
+
+.hidden {
+    background-color: #bc8f8f;
+}
+
+.clicked {
+    background-color: #6b8e23;
+    color: white;
+}
+
+#board {
+    text-align: center;
+}
+
+.exploded {
+    background-color: green;
+}
+
+.flagged {
+    background-color: #7b68ee;
+}
+
+#scoreBoard div {
+    display: inline-block;
+    color: #d02090;
+    margin: 0 10px;
+    width: 100px;
+}
+
+#mineCount, #timer {
+    font-size: 30px;
+}
+
+#create {
+    margin: 10px;
+    color: #d02090;
+}
+
+.button {
+    border-style: solid;
+    border-color: #ff69b4;
+    border-width: 3px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 5px 10px;
+    background-color: #ff69b4;
+    font-weight: 700;
+    color: #FFFAF0;
+    margin-top: 10px;
+}
+
+.button:hover {
+    border-color: #d02090;
+}
+
+#highScore {
+    font-size: 50px;
+}
+
+i {
+    color: #FFFAF0;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+input[type=number] {
+    border-radius: 50px;
+    background-color: #FFFAF0;
+    border-style: solid;
+    border-color: #ff69b4;
+    text-align: center;
+    color: #d02090;
+    text-transform: uppercase;
+    width: 70px;
+    margin: 0 10px;
+    font-weight: 700;
+}
+
+#status {
+    font-size: 30px;
+    margin: 10px;
+    text-transform: uppercase;
+    color: #d02090;
+    font-weight: 800;
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+ 
+input[type="number"] {
+    -moz-appearance: textfield;
+}
