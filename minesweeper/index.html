@@ -7,32 +7,33 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/1.0.5/jquery.mobile-events.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
     <h1>Minesweeper</h1>
-    <div id="scoreBoard">
-        <div id="mineCount"></div>
-        <div id="highScore"></div>
-        <div id="timer"></div>
+    <div id='game'>
+        <div id="scoreBoard">
+            <div id="mineCount"></div>
+            <div id="timer"></div>
+        </div>
+        <div id="board"></div>
+        <button type="button" id="reset" class="button">Reset</button>
+        <div id="status"></div>
+        <form id="create">
+            <input type="number" name="columns" placeholder="Columns" min="8" max="40">    
+            <input type="number" name="rows" placeholder="Rows" min="8" max="30">
+            <input type="number" name="mines" placeholder="Mines" min="1">
+            <br>
+            <input class="button" type="submit" value="Create">   
+        </form>
     </div>
-    <div id="board"></div>
-    <button type="button" id="reset" class="button">Reset</button>
-    <div id="status"></div>
-    <form id="create">
-        <input type="number" name="columns" placeholder="Columns" min="8" max="40">    
-        <input type="number" name="rows" placeholder="Rows" min="8" max="30">
-        <input type="number" name="mines" placeholder="Mines" min="1">
-        <br>
-        <input class="button" type="submit" value="Submit">   
-    </form>
-    <div class="instructions">
-        <p>Mines can be flagged by double clicking or holding shift and left clicking.</p>
-        <p>Top left is the amount of mines minus the amount of flagged spaces.</p>
-        <p>Top right is a timer that starts on your first click.</p>
-        <p>When you win your high score, the fastest time, will appear in the center above the board.</p>
-        <p>If you want to create a new board, fill out the columns, rows, and mines inputs and hit submit.</p>
-        <p>Hitting reset will create a new board with the same inputs as the previous board.</p>
-    </div>
+    <table id="highScores">
+        <tr id="header">
+            <th>Tile Count</th>
+            <th>Mine Count</th>
+            <th>Time</th>
+        </tr>
+    </table>
 </body>
 </html>

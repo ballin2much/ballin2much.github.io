@@ -15,6 +15,13 @@ body {
     margin: 2px;
     vertical-align: top;
     line-height: 30px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 .space:hover {
@@ -76,10 +83,6 @@ body {
     border-color: #d02090;
 }
 
-#highScore {
-    font-size: 50px;
-}
-
 i {
     color: #FFFAF0;
 }
@@ -118,8 +121,14 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
-.instructions {
-    margin: 50px;
-    font-size: 20px;
+#highScores {
+    margin: 0 auto;
     color: #d02090;
+    border: 3px solid #ff69b4;
+}
+
+th, td{
+    width: 15%;
+    max-width: 60px;
+    border: 1px solid;
 }
