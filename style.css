@@ -20,7 +20,7 @@ body, html {
   text-transform:uppercase; 
 }
 
-.img1, .img2, .img3, .end {
+.img1, .img2, .img3, .img0, .end {
     position:relative;
     background-position: center;
     background-size:cover;
@@ -46,6 +46,11 @@ body, html {
 
   .img3 {
     background-image:url('AlmostWallpaper.png');
+    min-height:100%;
+  }
+
+  .img0 {
+    background-image:url('MuttleyBC.png');
     min-height:100%;
   }
 
@@ -78,6 +83,11 @@ body, html {
     background-color: #232b3d;
   }
 
+  .section4 {
+    color: #ffffff;
+    background-color: #0f0e48;
+  }
+
   .iframe {
     width: 50%;
     align-self: center;
@@ -108,6 +118,10 @@ body, html {
   }
 
   .color3 {
+    color: #49ef98;
+  }
+
+  .color4 {
     color: #ff7f00;
   }
 
@@ -116,7 +130,7 @@ body, html {
       flex-direction: column;
     }
     
-    .section1, .section3 {
+    .section1, .section3, .section4 {
       flex-direction: column-reverse;
     }
 
