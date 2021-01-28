@@ -6,7 +6,7 @@ let AItype = "MiniMax"
 $(document).ready(function() {    
     $(".cell").text(" ");
     $(".AI").click(function(){
-        let s = $(this).data("type");
+        let s = String($(this).data("type"));
         $(".selected").html("<h1>" + s + " currently selected</h1>");
         AItype = s;
     })
