@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Tic Tac Toe</title>
+  <meta name="description" content="Tic Tac No!">
+  <meta name="author" content="Mark Murphy">
+  <link rel="stylesheet" type="text/css" href="style.css">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="board">
+            <div class = "cell" id="00"></div>
+            <div class = "cell" id="01"></div>
+            <div class = "cell" id="02"></div>
+            <div class = "cell" id="10"></div>
+            <div class = "cell" id="11"></div>
+            <div class = "cell" id="12"></div>
+            <div class = "cell" id="20"></div>
+            <div class = "cell" id="21"></div>
+            <div class = "cell" id="22"></div>
+        </div>
+    </div>
+    
+    <div id="winner"></div>
+    
+    <div class="wrapper">
+        <div class="buttonRow" id="AIbtns">
+            <div class="btnwrap b1 r"><button id="X">Play as X's</button></div>
+            <div class="btnwrap b2 c"><button id="O">Play as O's</button></div>
+            <div class="btnwrap b3 l"><button id="aifirst">let AI Play First</button></div>
+            <div class="btnwrap b4 r"><button class="AI" data-type="MiniMax">Play MiniMax</button></div>
+            <div class="btnwrap b5 c"><button class="AI" data-type="10">Play 10 Game ML AI</button></div>
+            <div class="btnwrap b6 l"><button class="AI" data-type="100">Play 100 Game ML AI</button></div>
+            <div class="btnwrap b7 r"><button class="AI" data-type="1000">Play 1,000 Game ML AI</button></div>
+            <div class="btnwrap b8 c"><button class="AI" data-type="100000">Play 100,000 Game ML AI</button></div>
+            <div class="btnwrap b9 l"><button id="reset">Reset</button></div>
+            <div class="selected"><h1>MiniMax currently selected</h1></div>
+        </div>
+    </div>
+</body>
+</html>
