@@ -1,165 +1,172 @@
-body, html {
-    height:100%;
-    margin:0;
-    font-size: 16px;
-    font-family:"Lato", sans-serif;
-    font-weight: 400;
-    line-height: 1.8em;
-    color: #666;
+body,
+html {
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
 }
 
 .mainLink {
-  text-decoration: none;
-  position:fixed;
-  top: 50px;
-  width:100%;
-  text-align:center;
-  color:#2f2a3b;
-  font-size:32px;
-  letter-spacing:8px;
-  text-transform:uppercase; 
+	text-decoration: none;
+	position: fixed;
+	top: 50px;
+	width: 100%;
+	text-align: center;
+	color: #2f2a3b;
+	font-size: 32px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
 }
 
-.img1, .img2, .img3, .img0, .end, .section0 {
-    position:relative;
-    background-position: center;
-    background-size:cover;
-    background-repeat:no-repeat;
-  
-    /*
+.img1,
+.img2,
+.img3,
+.img0,
+.end,
+.section0 {
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	/*
       fixed = parallax
       scroll = normal
     */
-    background-attachment:fixed;
-    z-index: -1;
-  }
-  
-  .img1 {
-    background-image:url('Cantreachwallpaper.png');
-    min-height:100%;
-  }
+	background-attachment: fixed;
+	z-index: -1;
+}
 
-  .img2 {
-    background-image:url('ITWILL\ Wallpaper.png');
-    min-height:100%;
-  }
+.img1 {
+	background-image: url("Cantreachwallpaper.png");
+	min-height: 100%;
+}
 
-  .img3 {
-    background-image:url('AlmostWallpaper.png');
-    min-height:100%;
-  }
+.img2 {
+	background-image: url("ITWILL Wallpaper.png");
+	min-height: 100%;
+}
 
-  .img0 {
-    background-image:url('MuttleyBC.png');
-    min-height:100%;
-  }
+.img3 {
+	background-image: url("AlmostWallpaper.png");
+	min-height: 100%;
+}
 
-  .end {
-    background-image:url('Even\ Elephants\ Forget.png');
-    min-height:100%;
-    opacity: 1;
-    background-position: bottom;
-  }
+.img0 {
+	background-image: url("MuttleyBC.png");
+	min-height: 100%;
+}
 
-    
-  .ptext .border.trans {
-    background-color:transparent;
-  }
+.end {
+	background-image: url("Even Elephants Forget.png");
+	min-height: 100%;
+	opacity: 1;
+	background-position: bottom;
+}
 
-  .section {
-    display: flex;
-    position: relative;    
-    background-color: #ebd8c6;
-    justify-content:center;
-  }
+.ptext .border.trans {
+	background-color: transparent;
+}
 
-  .section0 {
-    background-image:url('Cantreachwallpaper.png');
-  }
+.section {
+	display: flex;
+	position: relative;
+	background-color: #ebd8c6;
+	justify-content: center;
+}
 
-  .section2 {
-    background-color: #282828;
-    color: #fff;
-  }
+.section0 {
+	background-image: url("Cantreachwallpaper.png");
+}
 
-  .section3 {
-    color: #ede1a6;
-    background-color: #232b3d;
-  }
+.section2 {
+	background-color: #282828;
+	color: #fff;
+}
 
-  .section4 {
-    color: #ffffff;
-    background-color: #0f0e48;
-  }
+.section3 {
+	color: #ede1a6;
+	background-color: #232b3d;
+}
 
-  .iframe {
-    width: 50%;
-    align-self: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    max-width: 500px;
-  }
+.section4 {
+	color: #ffffff;
+	background-color: #0f0e48;
+}
 
-  .p1 {
-    align-self: center;
-    text-align: center;
-    width: 50%;
-    height: auto;
-    font-size: 2vw;
-    line-height: 1.5em;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.iframe {
+	width: 80%;
+	align-self: center;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	max-width: 800px;
+}
 
-  .color1 {
-    color: #fff;
-  }
+.p1 {
+	align-self: center;
+	text-align: center;
+	width: 50%;
+	height: auto;
+	font-size: 2vw;
+	line-height: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+}
 
-  .color2 {
-    color: #232b3d;
-  }
+.color1 {
+	color: #fff;
+}
 
-  .color3 {
-    color: #49ef98;
-  }
+.color2 {
+	color: #232b3d;
+}
 
-  .color4 {
-    color: #ff7f00;
-  }
+.color3 {
+	color: #49ef98;
+}
 
-  .container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-  }
+.color4 {
+	color: #ff7f00;
+}
 
-  .musicvideo {
-    position: absolute;
-    top: 0;
-    left: 25%;
-    width: 50%;
-    height: 50%;
-    border: 0;
-  }
+.container {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+}
 
-  @media only screen and (max-width:700px) {
-    .section2 {
-      flex-direction: column;
-    }
-    
-    .section1, .section3, .section4 {
-      flex-direction: column-reverse;
-    }
+.musicvideo {
+	position: absolute;
+	top: 0;
+	left: 10%;
+	width: 80%;
+	height: 80%;
+	border: 0;
+}
 
-    .p1 {
-      font-size: 15px;
-      width: 100%;
-    }
+@media only screen and (max-width: 700px) {
+	.section2 {
+		flex-direction: column;
+	}
 
-    .iframe {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-  }
+	.section1,
+	.section3,
+	.section4 {
+		flex-direction: column-reverse;
+	}
+
+	.p1 {
+		font-size: 15px;
+		width: 100%;
+	}
+
+	.iframe {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
